@@ -12,6 +12,17 @@
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
+    <script>
+        function fun() {
+            document.getElementById('name').value = '';
+            document.getElementById('mail').value = '';
+            document.getElementById('phone').value = '';
+        }
+        function show_alert() {
+            alert("form submitted successfully");
+        }
+
+    </script>
 
 </head>
 
@@ -95,7 +106,7 @@
 
                 <textarea name="" placeholder="your message" id="" cols="30" rows="10"></textarea>
 
-                <div> <input type="submit" value="send message" class="btn"></div>
+                <div> <input type="submit" onclick="fun(); show_alert();" value="send message" class="btn"></div>
 
             </form>
 
